@@ -1,0 +1,49 @@
+1)
+A -
+ void addFirst (Object v){
+	Node t= new Node(v);
+	If (head==null){
+		t.next=t;
+		head=t;
+}else{
+	t.next= head.next;
+	head.next=t;
+	head=t;
+}
+}
+B -
+Void removeFirst(){
+	If(head!=null){
+	If (head==head.next)
+		Head=null;
+else
+	head.next= head.next.next;
+}
+}
+C –
+Void remove (int index) throws EmptyStackException {
+	If (empty())
+		Throw new EmptyStackException (‘’Lista Vazia’’);
+	If (index==0){
+		First=first.next;
+}else{
+		For(int i=0; i< index-1; i++)
+			Cursor = cursor.next;
+			Cursor.next=cursor.next.next;
+}
+Size --;
+
+D –
+Void imprime(){
+	ListNode cursor = first;
+
+	while (cursor!=null){
+		System.out.println(cursor.val);
+		cursor= cursor.next;
+}
+}
+Void print (){
+	For(ListNode cursor= first; cursor!= null; cursor=cursor.next)
+		System.out.println(cursor.val);
+}
+
